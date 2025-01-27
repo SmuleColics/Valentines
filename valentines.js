@@ -17,7 +17,7 @@ noBtn.addEventListener('mouseover', () => {
 
   noBtn.style.position = "absolute";
   yesBtn.style.position = "absolute";
-  yesBtn.style.left = "46%";
+  yesBtn.style.left = "38%";
 
   const noBtnRect = noBtn.getBoundingClientRect();
   const maxX = window.innerWidth - noBtnRect.width;

@@ -1,0 +1,153 @@
+:root {
+  --bg-color: #191414;
+  --spotify-color: #1ed760;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.most-beautiful {
+  width: 300px;
+}
+
+.spotify {
+  margin-top: 18px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--bg-color);
+  color: white;
+  border-radius: 6px;
+}
+
+.spotify-frame {
+  padding: 10px;
+}
+
+.spotify-logo-waveform {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--spotify-color);
+}
+
+.fa-spotify {
+  font-size: 40px;
+}
+
+.spotify-title-heart {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.song-title {
+  font-weight: 600;
+}
+
+.song-author {
+  margin: 4px 0;
+}
+
+.audio-waveform {
+  filter: brightness(0) invert(1);
+}
+
+.spotify-sound-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.line-track {
+  height: 2px;
+  width: 100%;
+  background-color: white;
+  margin: 0 3px;
+}
+
+.spotify-buttons {
+  margin-top: 12px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+}
+
+.play-bg {
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.fa-play {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: -3px;
+}
+
+audio {
+  display: none;
+}
+
+.spotify-top {
+  max-height: 0; 
+  opacity: 0; 
+  overflow: hidden;
+  transition: max-height 1.75s ease, opacity 1.75s ease;
+}
+
+.spotify-top.active {
+  max-height: 200px; 
+  opacity: 1;
+}
+
+.song-title {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.song-title.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.play-me, .scroll-down {
+  margin-top: 12px;
+  font-family: "Quicksand", serif;
+  font-size: 1.2rem;
+}
+
+.play-me {
+  color: black;
+}
+
+.scroll-down {
+  color: white;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.scroll-down.pop-out {
+  opacity: 1;
+}
+
+
+

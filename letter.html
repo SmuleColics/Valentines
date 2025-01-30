@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="spotify.css">
+    <link rel="stylesheet" href="letter.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    </style>
+  </head>
+  <body>
+    <audio id="audio-player" controls>
+      <source src="pics/The Most Beautiful Thing.mp3" type="audio/mp3">
+      <source src="audio-file.ogg" type="audio/ogg">
+      Your browser does not support the audio element.
+    </audio>
+    <div class="spotify">
+      <div class="spotify-frame">
+        <div class="spotify-top">
+          <img class="most-beautiful" src="pics/most-beautiful-girl.jpg" alt="most beauftiful girl">
+        </div>
+        <div class="spotify-logo-waveform">
+          <i class="fa-brands fa-spotify"></i>
+          <img class="audio-waveform" src="pics/waveform.svg" alt="audio-waveform" >  
+        </div>
+        <div class="spotify-title-heart">
+          <p class="song-title">The Most Beautiful Thing</p>
+          <i class="fa-solid fa-heart" style="color: #1ed760;"></i>
+        </div>
+        <p class="song-author">Bruno Major</p>
+        <div class="spotify-sound-time">
+          <p class="start-time">0:00</p>
+          <div class="line-track"></div>
+          <p class="end-time">3:55</p>
+        </div>
+        <div class="spotify-buttons">
+          <i class="fa-solid fa-shuffle"></i>
+          <i class="fas fa-backward-step"></i>
+          <div class="play-bg">
+            <i id="play-button" class="fas fa-play"></i>
+          </div>
+          <i class="fas fa-forward-step"></i>
+          <i class="fa-solid fa-repeat"></i>
+        </div>
+      </div>
+
+    </div>
+    <p class="play-me">Play me</p>
+    <p class="scroll-down">Scroll down</p>
+    <div class="love-letter">
+      <p class="love-letter-date">1/30/2025</p>
+      <p class="love-letter-to"></p>
+      <p class="love-letter-content-one"></p>
+      <p class="love-letter-content-two"></p>
+    </div>
+    <script src="letter.js"></script>
+  </body>
+</html>
+

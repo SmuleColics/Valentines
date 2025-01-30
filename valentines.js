@@ -2,14 +2,17 @@ const yesBtn = document.querySelector('.yes-btn');
 const noBtn = document.querySelector('.no-btn');
 const gif = document.querySelector('.gif');
 const text = document.querySelector('.valentine-text');
+const nextBtn = document.querySelector('.next-btn');
 
 const mimosa = ["pics/mimosaIsHappy.gif", "pics/mimosaIsCrying.gif"];
 
 yesBtn.addEventListener('click', () => {
-    text.innerHTML = "yayyy";
-    gif.src = mimosa[0];
-    yesBtn.style.display = 'none';
-    noBtn.style.display = 'none';
+  text.innerHTML = "yayyy!!!";
+  gif.src = mimosa[0];
+  yesBtn.style.display = 'none';
+  noBtn.style.display = 'none';
+
+  setInterval(showNextButton, 3000);
 });
 
 noBtn.addEventListener('mouseover', () => {
@@ -30,3 +33,12 @@ noBtn.addEventListener('mouseover', () => {
   noBtn.style.top = randomYPosition + "px";
 });
 
+
+const showNextButton = () => {
+  nextBtn.classList.add('show'); 
+  nextBtn.style.marginTop = "10%";
+
+  nextBtn.addEventListener('click', () => {
+    window.location.href = "memories.html";
+  });
+};

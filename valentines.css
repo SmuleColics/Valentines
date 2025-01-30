@@ -34,11 +34,32 @@ body {
   font-weight: 550;
 }
 
+.valentines-main-popup .next-btn {
+  /* display: none; */
+  opacity: 0;
+  background-color: #d90166;
+  color: #fff;
+  border: #fff solid;
+  font-size: clamp(1rem, 5vw, 2rem);
+  font-weight: 700;
+  padding: 4px 40px;
+  border-radius: 50px;
+  transition: opacity 1s ease-in-out;  /* Transition for opacity */
+}
+
+.valentines-main-popup .next-btn.show {
+  opacity: 1;  
+}
+
+
 .valentines-main-bottom button {
   font-size: clamp(1rem, 5vw, 2rem);
   font-weight: 700;
   padding: 4px 40px;
   border-radius: 10px;
+  background-color: #d90166;
+  color: #fff;
+  border: #fff solid;
 }
 
 .no-btn {
@@ -48,6 +69,3 @@ body {
 .yes-btn {
   margin-right: 10px;
 }
-
-
-
